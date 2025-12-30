@@ -25,6 +25,6 @@ It focuses on clean design, glassmorphism effects, smooth animations, and dark/l
 ---
 ## 📸 Project Preview
 
-![GlassUI Screenshot](img.jpg)
+![GlassUI Screenshot](img.png)
 
 ---
