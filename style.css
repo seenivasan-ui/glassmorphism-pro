@@ -1,0 +1,151 @@
+\:root {
+    --bg: #0f2027;
+    --text: #ffffff;
+    --glass: rgba(255, 255, 255, 0.12);
+  }
+  
+  .light {
+    --bg: #f4f7fb;
+    --text: #111;
+    --glass: rgba(255, 255, 255, 0.6);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43);
+    color: var(--text);
+    min-height: 100vh;
+    transition: 0.4s;
+  }
+  
+  body.light {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  }
+  
+  /* Glass Effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  /* Navbar */
+  .navbar {
+    margin: 20px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #themeToggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--text);
+  }
+  
+  /* Hero */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+  }
+  
+  .card {
+    padding: 25px;
+    transition: transform 0.4s;
+  }
+  
+  .card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  }
+  
+  .navbar:hover {
+    box-shadow: 0 6px 25px rgba(255, 255, 255, 0.12);
+  }
+  #themeToggle {
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  #themeToggle:hover {
+    transform: rotate(20deg) scale(1.1);
+    opacity: 0.8;
+  }
+  .card h3 {
+    transition: color 0.3s;
+  }
+  
+  .card:hover h3 {
+    color: #ffd369;
+  }
+  
+    
+  /* Footer */
+  footer {
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  /* Animations */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 0.8s forwards;
+  }
+  
+  .delay {
+    animation-delay: 0.4s;
+  }
+  
+  .delay-2 {
+    animation-delay: 0.7s;
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
