@@ -23,5 +23,8 @@ It focuses on clean design, glassmorphism effects, smooth animations, and dark/l
 - JavaScript (Theme toggle & interactions)
 
 ---
+## 📸 Project Preview
 
-## 📁 Project Structure
+![GlassUI Screenshot](img.jpg)
+
+---
